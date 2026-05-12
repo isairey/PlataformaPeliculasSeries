@@ -158,7 +158,7 @@ Se recomienda:
 # 📂 Estructura del proyecto
 
 ```bash
-mstream/
+PlataformaPeliculasSeries/
 │
 ├── public/
 │   ├── img/
@@ -184,7 +184,7 @@ mstream/
 ## 1️⃣ Clonar repositorio
 
 ```bash
-git clone https://github.com/cd-Crypton/mstream.git
+git clone https://github.com/isairey/PlataformaPeliculasSeries.git
 ```
 
 ---
@@ -192,7 +192,7 @@ git clone https://github.com/cd-Crypton/mstream.git
 ## 2️⃣ Entrar al proyecto
 
 ```bash
-cd mstream/mstream
+cd PlataformaPeliculasSeries/PlataformaPeliculasSeries
 ```
 
 ---
@@ -385,7 +385,7 @@ Si encuentras errores o deseas sugerir mejoras:
 
 <div align="center">
 
-## cd-Crypton
+## Isai Reyes
 
 Desarrollador enfocado en plataformas multimedia modernas y aplicaciones open-source de streaming.
 
