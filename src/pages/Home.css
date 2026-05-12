@@ -1,0 +1,192 @@
+.time-window-toggle-container {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 20px 0 !important;
+  padding: 0 20px !important;
+  z-index: 100 !important;
+  position: relative !important;
+}
+
+.time-window-toggle {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  padding: 10px 20px !important;
+  border-radius: 30px !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  width: fit-content !important;
+  margin: 0 auto !important;
+}
+
+.toggle-label {
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  transition: color 0.3s ease !important;
+  opacity: 0.7 !important;
+}
+
+.toggle-label.active {
+  opacity: 1 !important;
+  color: #e50914 !important;
+}
+
+.toggle-switch {
+  position: relative !important;
+  width: 60px !important;
+  height: 30px !important;
+  background: #333 !important;
+  border-radius: 30px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: background 0.3s ease !important;
+  outline: none !important;
+}
+
+.toggle-switch.day {
+  background: #e50914 !important;
+}
+
+.toggle-slider {
+  position: absolute !important;
+  top: 3px !important;
+  left: 3px !important;
+  width: 24px !important;
+  height: 24px !important;
+  background: white !important;
+  border-radius: 50% !important;
+  transition: transform 0.3s ease !important;
+}
+
+.toggle-switch.week .toggle-slider {
+  transform: translateX(0) !important;
+}
+
+.toggle-switch.day .toggle-slider {
+  transform: translateX(30px) !important;
+}
+
+@media (max-width: 768px) {
+  .time-window-toggle {
+    padding: 8px 15px !important;
+    gap: 12px !important;
+  }
+
+  .toggle-label {
+    font-size: 12px !important;
+  }
+
+  .toggle-switch {
+    width: 50px !important;
+    height: 25px !important;
+  }
+
+  .toggle-slider {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .toggle-switch.day .toggle-slider {
+    transform: translateX(25px) !important;
+  }
+}
+
+.time-window-toggle-container {
+  display: flex !important;
+  justify-content: center !important;
+  margin: 20px 0 !important;
+  padding: 0 20px !important;
+  z-index: 100 !important; 
+  position: relative !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.time-window-toggle {
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  padding: 10px 20px !important;
+  border-radius: 30px !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  width: fit-content !important;
+  margin: 0 auto !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 1001 !important;
+}
+
+/* Now Playing Overlay Styles */
+.now-playing-overlay {
+  margin-bottom: 15px;
+}
+
+.now-playing-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #e50914, #ff6b6b);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(229, 9, 20, 0.4);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 2px 8px rgba(229, 9, 20, 0.4);
+  }
+  50% {
+    box-shadow: 0 2px 16px rgba(229, 9, 20, 0.6);
+  }
+  100% {
+    box-shadow: 0 2px 8px rgba(229, 9, 20, 0.4);
+  }
+}
+
+/* Home.css - Add these styles */
+
+.trending-side-by-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 40px;
+}
+
+.trending-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure MovieRow components in side-by-side layout show 3 columns */
+.trending-column .movie-row .grid-container {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .trending-side-by-side {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .trending-column .movie-row .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .trending-column .movie-row .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MStream - Watch Movies & TV Shows Online | Free Streaming</title>
+    <link rel="icon" type="image/x-icon" href="/icon/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MStream - Your favorite destination for movies and TV shows. Stream the latest blockbusters, popular TV series, and anime all in one place." />
+    
+    <meta name="keywords" content="movies, TV shows, streaming, anime, entertainment, watch online, MStream">
+    <meta name="author" content="MStream">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mstream.eu.cc">
+    <meta property="og:title" content="MStream - Watch Movies & TV Shows Online">
+    <meta property="og:description" content="Your favorite destination for movies and TV shows. Stream the latest blockbusters, popular TV series, and anime all in one place.">
+    <meta property="og:image" content="https://mstream.eu.cc/img/landingpage.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MStream - Stream Movies & TV Shows">
+    <meta property="og:site_name" content="MStream">
+    
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mstream.eu.cc">
+    <meta property="twitter:title" content="MStream - Watch Movies & TV Shows Online">
+    <meta property="twitter:description" content="Your favorite destination for movies and TV shows. Stream the latest blockbusters, popular TV series, and anime all in one place.">
+    <meta property="twitter:image" content="https://mstream.eu.cc/img/landingpage.webp">
+    <meta property="twitter:image:alt" content="MStream - Stream Movies & TV Shows">
+    
+    <meta name="theme-color" content="#e50914">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta http-equiv="Cache-Control" content="public, max-age=3600">
+    <meta http-equiv="Expires" content="1">
+    <link rel="canonical" href="https://mstream.eu.cc">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MStream",
+      "url": "https://mstream.eu.cc",
+      "description": "Your favorite destination for movies and TV shows",
+      "publisher": {
+        "@type": "Organization",
+        "name": "MStream",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mstream.eu.cc/logo/mstream.png"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://mstream.eu.cc/search/multi?query={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/config/manifest.json">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#141414" />
+    
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        background-color: #000000;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      
+      #root {
+        min-height: 100vh;
+      }
+      
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      
+      .netflix-logo {
+        color: #ff000d;
+        font-size: 2rem;
+        font-weight: 700;
+        text-shadow: 0 0 5px #E50914, 0 0 10px #E50914, 0 0 20px #E50914;
+        animation: pulse-glow 2s infinite;
+      }
+
+      @keyframes pulse-glow {
+        0% {
+          text-shadow: 0 0 5px #E50914, 0 0 10px #E50914, 0 0 15px #E50914;
+        }
+        50% {
+          text-shadow: 0 0 5px #E50914, 0 0 15px #E50914, 0 0 20px #E50914, 0 0 25px #E50914;
+        }
+        100% {
+          text-shadow: 0 0 5px #E50914, 0 0 10px #E50914, 0 0 15px #E50914;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="loading-screen">
+      <div class="netflix-logo">MSTREAM</div>
+    </div>
+    <script>
+      setTimeout(() => {
+        const loadingScreen = document.querySelector('.loading-screen');
+        if (loadingScreen) {
+          loadingScreen.style.opacity = '0';
+          loadingScreen.style.transition = 'opacity 0.5s ease';
+
+          setTimeout(() => loadingScreen.remove(), 500);
+        }
+      }, 4000);
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+
+</html>
